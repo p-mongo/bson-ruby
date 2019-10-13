@@ -15,7 +15,7 @@ end
 
 group :development, :test do
   gem 'rspec', '~> 3.2'
-  gem 'rake-compiler'
+  gem 'rake-compiler', git: 'https://github.com/p-mongo/rake-compiler'
   gem 'ruby-prof', :platforms => :mri
   gem 'yard'
   gem 'activesupport'
