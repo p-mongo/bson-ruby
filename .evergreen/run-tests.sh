@@ -13,6 +13,14 @@ set_env_vars
 
 setup_ruby
 
+git clone https://github.com/p-mongo/bundler
+cd bundler
+git checkout merge
+# bundler ships with rake & rspec binaries ??
+rm bin/r*
+cd ..
+export PATH=`pwd`/bundler/bin:$PATH
+
 install_deps
 
 echo "Running specs"
